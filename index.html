@@ -1,0 +1,503 @@
+<script type="text/javascript">
+	
+	// // A property has no ()
+	// // A function/method has (), meaning its going to do something
+
+	// // alert("hello world");
+	// // document.write("Hello World!");
+	// console.log("Hello World")
+
+	// // Variables
+	// // String - letters and numbers, meant for printing or user experience
+	// var fullName = "Robert Bunch";
+	// //document.write(fullName)
+
+
+	// fullName = 'Robert Bunch';
+	// var nationality = "American"
+	// nationality = "British";
+	// //document.write(nationality);
+
+
+
+	// var myName = 'Rob "The Man" Bunch';
+	// myNambe = "Rob \"The Man\" Bunch";
+	// myName = "Rob O'Malley Bunch";
+	// myName = 'Rob O\'Malley Bunch';
+
+	// fullName = myName;
+	// // document.write(fullName);
+
+	// // Integer - number with no decimal points.
+	// var myAge = 37;
+	// var myAgeString = "37";
+
+	// var myBirthday = myAge + 1;
+	// // document.write(myBirthday);
+
+	// var doubleMyAge = myAge + myAge;
+	// // document.write(doubleMyAge);
+
+	// // Force Number on a string
+	// var forceNumber = Number(myAgeString);
+	// var bogusNumber= Number(myName);
+	// // document.write(forceNumber + 1);
+	// // document.write(bogusNumber +1)
+
+	// // Float = any number with a decimal point
+	// var floatNumber = 12.4
+	// var newFloat = floatNumber + 1;
+	// var makeMeAnInterger = parseInt(newFloat);
+	// // document.write(makeMeAnInterger);
+	// // parseInt tries to make an float into an interger
+	// var makeMeAFloat = parseFloat(newFloat);
+	// // parseFloat change into a float
+	// // document.write(makeMeAFloat);
+
+	// var MakeMeAString = floatNumber.toString();
+	// // toString changed the floatNumber to string
+	// // document.write(MakeMeAString + 1);
+
+
+	// var theTruth = true; //Boolean
+	// var theLie = false; //Boolean
+	// var theWannabeTruth = "true" //String
+	// var theOtherWannabe = 1; //Integer
+
+	// //document.write(typeof(theTruth));
+
+	// var myAge = 23;
+	// var myBirthday = myAge + 1;
+	// myAge++; //Increment by 1 (same as above)
+	// myAge--; //Deincrement by 1
+
+	// theMeaningofLife = 84 / 2; //Division symbol;
+
+	// var theNumberTwo = 8 % 3;
+	// //console.log(theNumberTwo);
+
+	// //Do more math
+	// //Parenthesis 
+	// var salesTotal = 3 * 12 + 4;
+	// var salesTotal = (12 + 4) * 3;
+	// //document.write(salesTotal);
+
+	// var firstName = "Robert";
+	// var lastName = "Bunch";
+	// var fullName = firstName + ' '+ lastName;
+	// var middleName = "The Man";
+	// fullName = firstName + ' ' + middleName + ' ' + lastName
+	// var numberConcat = "2" + 2;
+	// var theHitchhikersGuide = "The meaning of Life is " + (40 + 2);
+	// //document.write(numberConcat);
+
+	// //Prompts
+	// //var name = prompt("What is your name?");
+	// //var nameWithDefault = prompt("Heads or Tails?", "heads");
+
+	// //JS prompts are limited to the scope the page.
+	// //HTML inputs/forms can be accessed within the page and passed on to other pages.
+
+	// //Conditionals
+	// var numberofRobs = 1; 
+	// var question = "What is your name?";
+	// var defaultAnswer = "Rob";
+	// //var name = prompt(question, defaultAnswer);
+	// // if(name === "Rob") {
+	// 	alert("That's my name too!")
+	// 	numberOfRobs++;
+	// 	alert(numberOfRobs);
+	// }
+	// else {
+	// 	alert("Nice to meet you " + name);
+	// 	numberOfRobs--;
+	// 	alert(numberOfRobs);
+	// }
+
+
+	//AND
+	// if ((name === "Rob") && (last === "Bunch")) {
+
+	// }
+
+	// //OR
+	// if ((name === "Rob") || (last === "Bunch")) {
+		
+	// }
+	//Set up a prompt with a math question
+	//If the user gets it right, congrudulate them
+	//If wrong, alert them of the correct answer
+
+	// var question = "What does 1 + 1 equal to?"
+	// var defaultAnswer = "2"
+	// var answer = prompt(question, defaultAnswer);
+	// if(answer === "2") {
+	// 	alert("congrats")
+	// }
+	// else {
+	// 	alert("wrong, the answer is 2")
+	// }
+
+
+	// var answer = prompt("What is 2 + 2");
+	// answer = Number(answer);
+	// if(typeof(answer) === "number") {
+	// 	if(answer === 4) {
+	// 		alert("nice work, fool")
+	// 	}
+	// 	else {
+	// 		alert("You must enter a number!")
+	// 	}
+	// }
+
+	//Give them two questions
+	//If the user gets both right, alert them
+	//If the user gets one right, alert them
+	//If the user gets none right, console them.
+	// var question = "What is 1 + 1?"
+	// var defaultAnswer = "2"
+	// var question2 = "What is 2 + 2?"
+	// var defaultAnswer2 = "4"
+	// var answer = prompt(question, defaultAnswer);
+	// var answer2 = prompt(question2, defaultAnswer2);
+	// if((answer === "2") || (answer2 === "4")) {
+	// 	alert("nice job")
+	// }
+	// else {
+	// 	alert("wrong but it's ok")
+	// }
+
+// 	var answer2 = prompt("What is 2 + 3");
+// 	var answer3 = prompt("What is 3 + 3");
+// 	answer2 = Number(answer2);
+// 	ansswer3 = Number(answer3);
+// 	if((typeof(answer2) === 5) && (typeof(answer3 === "number")) )
+// 	{
+// 		if((answer2 === 5) && (answer3 === 6)) {
+// 			alert("you got both answers right!");
+// 		}
+// 		else if(answer2 === 5)  {
+// 			alert("you got the first one right");
+// 		}
+// 		else if(answer3 === 6) {
+// 			alert("you got the second one right");
+// 		else {
+// 			alert("You got neither question right!");
+// 		}
+// 	}
+// 	else {
+// 		alert("You must enter a number for both questions.");
+// 	}
+
+
+// var yourLotteryTicket = 28378423;
+// 	if(yourLotteryTicket !== lotteryWinner) {
+// 		alert("Tough luck, No one wins the lottery.");
+// 	}
+
+//Random numbers
+	// var randomNumber = Math.random(); //will generate a 16 digit number between 0 and 1
+	// console.log(randomNumber);
+
+	// var betweenOneAndHundred = (randomNumber * 100) + 1;
+	// var roundedNumber = Math.floor(betweenOneAndHundred);
+	// //math.floor rounds down
+	// console.log(roundedNumber);
+
+//Generate a random number between 1-10
+//Ask a user for a number between 1-10
+//if they match, alert
+//if they don't, alert
+// Alert them if their number is within 2 of the actual number
+
+// 	// var randomNumber = Math.random();
+// 	// var betweenOneAndTen = (randomNumber * 10) + 1;
+// 	// var roundedNumber = Math.floor(betweenOneAndTen);
+// 	// //var randomNumber = Math.floor((Math.random() * 10) + 1)   a number between 1-10
+// 	// var answer = prompt("Pick a number between 1 and 10");
+// 	// answerAsANumber = Number(answer);
+// 	// if(typeof(answer) === roundedNumber) {
+// 	// 	alert("that is correct")
+// 	// }
+// 	// //Math.abs is absolute number -3 |3|
+// 	// else if(Math.abs(answerAsANumber) - randomNumber <=2) {
+// 	// 	alert("You are wrong, but you are within 2. The number was: " + roundedNumber)
+// 	// }
+// 	// else {
+// 	// 	alert("You are not even close. The answer was: " + roundedNumber)
+// 	// }
+
+// 	// //Arrays
+// 	// 	var nfcSouthTeamOne = "Falcons";
+// 	// 	var nfcSouthTeamTwo = "Saints";
+// 	// 	var nfcSouthTeamThree = "Panthers";
+// 	// 	var nfcSouthTeamFour = "Bucs";
+
+// 	// 	alert("The best team in the nfc South is the " + nfcSouthTeamOne);
+// 	// 	alert("The best team in the nfc South is the " + nfcSouthTeamFour);
+
+// 	// 	// var change = "Falcons";
+// 	// 	// var the = "Saints";
+// 	// 	// var names = "bucs";
+// 	// 	// var ofTheVariables = "Panthers";
+
+// 	// 	var teams = ["Falcons", "Saints", "Panthers", "Bucs"];
+// 	// 	alert("The best team in the nfc South is the " + teams[0]);
+// 	// 	alert("The worst team in the nfc South is the " + teams[3]);
+// 	// 	// can put any kind of variables in an array.
+// 	// 	//numbers, booleans, strings, even put arrays
+// 	// 	//http://www.w3schools.com/js/js_arrays.asp
+
+// 	// 	teams[4] = "Ninjas";
+// 	// 	teams[11] = "The Lost Team";
+
+// 	// 	teams.pop(); //This will remove the last item in the array.
+// 	// 	teams.push("The New Cowboys"); //This will add new item to the end of array.
+// 	// 	team.unshift("The Cowboys"); //Puts element on the front
+// 	// 	team.shift(); //Remove first
+
+// 	// 	var atlTeams = [
+// 	// 		"Braves",
+// 	// 		"Falcons",
+// 	// 		"Hawks",
+// 	// 		"Thrashers"
+// 	// 	];
+
+// 	// 	atlTeams.splice(3,1,"Atlanta United"); //will start at element 3.  And will add whatever we give it.  Will remove x starting with 3. The 1 is the number of items that will be deleted starting from "3"
+// 	// 	teams.slice(0.1) //will start copying at first number, and stop copying at the 2nd number.
+
+// 		var dcTeam = ["Rob", "Max", "Jake", "Joe"];
+// 		var firstName = "Mary";
+// 		// if first name is in dc team array, alert "you work for DC"
+// 		// if not, alert "you don't work for digital crafts"
+		
+
+// 			if (firstName === dcTeam[0]) {
+// 				alert("you work for DC")
+// 			}
+// 			else if(firstName === dcTeam[1]) {
+// 				alert("you work for DC")
+// 			}
+// 			else if(firstName === dcTeam[2]) {
+// 				alert("you work for DC")
+// 			}
+// 			else if(firstName === dcTeam[3]) {
+// 				alert("you work for DC")
+// 			}
+// 			else {
+// 			alert("you DON'T work for DC")
+// 			}
+
+// 			//Another way to do it:
+// 			if(dcteam.indexOf(firstName) >= 0) {
+// 				alert("you work for digitalcrafts")
+// 			}
+// 			else {
+// 				alert("you don't")
+// 			}
+
+	
+
+// 	var dcTeam = ["Rob", "Max", "Jake", "Joe"];
+// 	for(i = 0; i < 4; i++) {
+// 		if(dcTeam[i] === "Jake") {
+// 			var message = ("You work for digitalcrafts")
+// 		}
+// 	}
+// 	if(message === "You work for digitalcrafts") {
+// 		alert(messege);
+// 	}
+
+
+// 	var firstName = "Chance"
+// 	var dcClass = ["Chance", "Stephen", "Stuart", "Will", "Griffin", "Freddy", "Oliver", "Yoski", "Andrew", "Peter"];
+// 	var matchFound = "";
+// 	for(i = 0; i < dcClass.length; i++) {
+// 		if(firstName === dcClass[i]){
+// 			alert("You are a DC students!");
+// 			break; //this tells it to stop looping as soon as you find the answer
+// 			alert("Can you read me?")
+// 		}
+// 		console.log(dcClass[i]);
+// 	}
+
+// 	var dcClass = ["Chance", "Stephen", "Stuart", "Will", "Griffin", "Freddy", "Oliver", "Yoski", "Andrew", "Peter"];
+// 	var dcClassRoles = ["The Joker", "The Student", "The Helper", "The Sleeper", "The Ninja", "The Ambitious One", "The Clueless One", "The Silent One", "The Butterfly", "The Chemist (BOOM!)"];
+
+// 	var studentWithRole;
+// 	for(i = 0; i < dcClass.length; i++) {
+// 		for(x = 0; x < dcClassRoles.length; x++) {
+// 			var chancesOfTrue = Math.random() * 100;
+// 			studentWithRole = dcClass[i] + " -- " + dcClassRoles[x];
+// 			if(chancesOfTrue > 75){
+// 				document.write(dcClass[i] + ' - ' + dcClassRoles[x] + '<br />');
+// 			}
+// 		}
+// 	}
+
+// 	var className = document.getElementById("class-name");
+
+
+// Strings are just arrays of characters!!
+// // if you need to manipulate a string for any reason, you can use the array function...slice, length, indexof, etc.
+
+// 	var myName = "rob the Maniac"
+// 	var firstChar = myName.slice(0,1); //will return "r"
+// 	var otherChars = myName.slice(1);  //will rturn "ob the Maniac"
+// 	var properCaseName = firstChar.toUpperCase() + otherChars.toLowerCase(); //makes upper case to lower, and lower to upper cases
+// 	document.write(properCaseName[5]);
+
+// 	document.write("There are " + properCaseName.length + " letters in your name.")
+
+// 	for(i=0; i < properCaseName.length; i++) {
+// 		document.write(properCaseName[i]);
+// 	}
+
+// 	//Real world example...
+// 	var password = "Thisismypassword";
+// 	//our rules for passwords must be between 4-8 chars
+// 	//must contain no spaces//
+// 	//Must have one number
+// 	// Must have 1 upper case
+// 	// Must have 1 lower case
+
+
+// 	var spaces = " "
+// 	if((password.length > 8) || (password < 4)) {
+// 		alert("Your password is must be between 8 and 4.");
+// 	}
+
+	//if(password.inedoxof(" ")) !== -1) {
+	// alert( "you cannot have any spaces in your password");
+	//}
+// }
+
+
+	// for(i = 0; i < password.length; i++) {
+	// 	// set character to password[i] so char changes depends on the i of the array
+	// 	var character = password[i];
+	// 	if(character === " ") {
+	// 		var spaceFound = 1;
+	// 	}
+
+	// 	if (isNaN(chracter) !== 1) {
+	// 		var numberFound = 1;
+	// 	}
+	// 	if(typeof(character) === 'number') {
+	// 		var numberFound = 1
+	// 	}
+	// 	if(chracter === chracter.toUpperCase()) {
+	// 		var uppercaseFound = 1;
+	// 	}
+	// }
+
+	// if (spaceFound === 1) {
+	// 	alert(" Your password ")
+	// }
+
+	// else if((password.toUpperCase() === password) || (password.toLowerCase() === password)) {
+	// 	alert("Your password must contain 1 upper case and 1 lower case")
+	// }
+	// for (i = 0; i < password.length; i++) {
+	// 	if (password[i] === " ")
+	// 		alert("You have a space");
+
+	// 	if (password[i] !== "0", "1", "2", "3", "4", "5", "6", "7", "8", "9")
+	// 		alert("You need a number");
+	// }
+
+// 	if(spaceFound === 1) {
+// 		alert("you cannot have any spaces")
+// 	}
+// 	if (numberFound !== 1 ) {
+// 		alert("You need to have number")
+// 	}
+// }
+// }
+
+	
+function throwDie(){
+	var randomDie = Math.round(Math.random()*5) + 1; //Give us a random number between 1-6
+	document.images["myDie"].src= "d" + randomDie + ".gif";
+	// go to document, go through images (myDie, go through the source
+	// goes to myDie, changes src 
+	console.log(randomDie);
+}
+
+function throwDice(){
+	var randomDie1 = Math.round(Math.random()*5) + 1;
+	var randomDie2 = Math.round(Math.random()*5) + 1;
+	document.images["myDie1"].src= "d" + randomDie1 + ".gif";
+	document.images["myDie2"].src= "d" + randomDie2 + ".gif";
+
+}
+
+</script>
+
+<!-- img src="d1.gif" name="myDie">
+<input type="button" value="Throw the die" onclick="throwDie();">
+
+<div>
+	<img src="d1.gif" name="myDie1">
+	<img src="d1.gif" name="myDie2">
+</div>
+
+<input type="button" value="Throw the dice!" onclick="throwDice();"> -->
+
+<div id="the-fight" style="text-align: center;">
+
+	<img src="dragon.png" name="dragon" height="200px"> 
+	<div id="dragon" style="font-size: 30px;">You have encountered a dragon. Do you want to attack?</div>
+	<div>
+		<img src="d1.gif" name="myDie1">
+		<img src="d1.gif" name="myDie2">
+	</div>
+	<div id="message" style="font-sizes: 20px; margin-top: 20px;">You must roll higher than a 9, to defeat the dragon</div>
+
+	<input type="button" value="Fight!" onclick="attackDragon()">
+	<input type="button" value="Run away!" onclick='document.getElementById("message").innerHTML = ("run along")'>
+	<div id="your-roll"></div>
+</div>
+
+<script type="text/javascript">
+	function attackDragon(){
+	var randomDie1 = Math.round(Math.random()*5) + 1;
+	var randomDie2 = Math.round(Math.random()*5) + 1;
+	document.images["myDie1"].src= "d" + randomDie1 + ".gif";
+	document.images["myDie2"].src= "d" + randomDie2 + ".gif";
+
+//Print out the total row as a number (check innerHTML online)
+	var totalRoll = randomDie1 + randomDie2
+	document.getElementById("your-roll").innerHTML = "You rolled a " + totalRoll;
+//Check and see if the number (total between two dice) is > 9
+	if(totalRoll > 9) {
+	//If so, put the message in the #message
+		document.getElementById("message").innerHTML = "you defeated the dragon";
+	}
+	//If not, put a different message in the #message
+	else {
+		document.getElementById("message").innerHTML = "you lost the battle";
+	}
+	
+
+
+	
+	//Add a button..."run away"
+	//If clicked on, add a message to #message.
+
+	}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div id="class-name">Hello, DigitalCrafts!</div> -->
