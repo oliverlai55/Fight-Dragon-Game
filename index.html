@@ -444,7 +444,7 @@ function throwDice(){
 
 <input type="button" value="Throw the dice!" onclick="throwDice();"> -->
 
-<div id="the-fight" style="text-align: center;">
+<!-- <div id="the-fight" style="text-align: center;">
 
 	<img src="dragon.png" name="dragon" height="200px"> 
 	<div id="dragon" style="font-size: 30px;">You have encountered a dragon. Do you want to attack?</div>
@@ -456,28 +456,28 @@ function throwDice(){
 
 	<input type="button" value="Fight!" onclick="attackDragon()">
 	<input type="button" value="Run away!" onclick='document.getElementById("message").innerHTML = ("run along")'>
-	<div id="your-roll"></div>
-</div>
+	<div id="your-roll">Find out what you rolled?</div>
+</div> -->
 
-<script type="text/javascript">
-	function attackDragon(){
-	var randomDie1 = Math.round(Math.random()*5) + 1;
-	var randomDie2 = Math.round(Math.random()*5) + 1;
-	document.images["myDie1"].src= "d" + randomDie1 + ".gif";
-	document.images["myDie2"].src= "d" + randomDie2 + ".gif";
+ // <script type="text/javascript">
+	// function attackDragon(){
+	// var randomDie1 = Math.round(Math.random()*5) + 1;
+	// var randomDie2 = Math.round(Math.random()*5) + 1;
+	// document.images["myDie1"].src= "d" + randomDie1 + ".gif";
+	// document.images["myDie2"].src= "d" + randomDie2 + ".gif";
 
-//Print out the total row as a number (check innerHTML online)
-	var totalRoll = randomDie1 + randomDie2
-	document.getElementById("your-roll").innerHTML = "You rolled a " + totalRoll;
-//Check and see if the number (total between two dice) is > 9
-	if(totalRoll > 9) {
-	//If so, put the message in the #message
-		document.getElementById("message").innerHTML = "you defeated the dragon";
-	}
-	//If not, put a different message in the #message
-	else {
-		document.getElementById("message").innerHTML = "you lost the battle";
-	}
+// //Print out the total row as a number (check innerHTML online)
+// 	var totalRoll = randomDie1 + randomDie2
+// 	document.getElementById("your-roll").innerHTML = "You rolled a " + totalRoll;
+// //Check and see if the number (total between two dice) is > 9
+// 	if(totalRoll > 9) {
+// 	//If so, put the message in the #message
+// 		document.getElementById("message").innerHTML = "you defeated the dragon";
+// 	}
+// 	//If not, put a different message in the #message
+// 	else {
+// 		document.getElementById("message").innerHTML = "you lost the battle";
+// 	}
 	
 
 
@@ -485,7 +485,44 @@ function throwDice(){
 	//Add a button..."run away"
 	//If clicked on, add a message to #message.
 
-	}
+	// }
+
+
+
+//Dates
+var now = new Date();
+console.log(now);
+
+var theDay = now.getDay(); //return the numbered day of the week starting with Sunday (0)
+
+//A little array practice
+var daysInEnglish = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+var theDayInEnglish = daysInEnglish[theDay];
+
+
+for(i = 0; i < 10; i++) {
+
+}	
+
+while(i , 10) {
+	console.log('i');
+	i++
+}
+
+// Do While Loop. It will loop at least once even though i may not meet the condition in "while"
+var i = 0;
+do(i < 10){
+	console.log(i);
+	i++;
+} while (i <=3);
+
+
+
+
+
+
+
+
 </script>
 
 
